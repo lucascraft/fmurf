@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="../../../addons/ofxMSAFluid/src/ofxMSAFluidSolver.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="851" topLine="1" />
+	</File>
+	<File name="../../../addons/ofxMSAFluid/src/ofxMSAFluidSolver.h" open="1" top="0" tabpos="5">
+		<Cursor position="1653" topLine="9" />
+	</File>
+	<File name="../../../addons/ofxMSAUtils/src/ofxMSAUtils.h" open="0" top="0" tabpos="9">
+		<Cursor position="0" topLine="237" />
+	</File>
+	<File name="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiFPSCounter.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiSlider2d.h" open="1" top="0" tabpos="18">
+		<Cursor position="159" topLine="0" />
+	</File>
+	<File name="src/Particle.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="217" topLine="0" />
+	</File>
+	<File name="src/ParticleSystem.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="0" topLine="46" />
+	</File>
+	<File name="src/connectionutils.cpp" open="1" top="0" tabpos="10">
+		<Cursor position="789" topLine="8" />
+	</File>
+	<File name="src/fmfutils.cpp" open="1" top="0" tabpos="11">
+		<Cursor position="879" topLine="15" />
+	</File>
+	<File name="src/gestures.cpp" open="1" top="0" tabpos="17">
+		<Cursor position="2945" topLine="62" />
+	</File>
+	<File name="src/gestures.h" open="1" top="0" tabpos="1">
+		<Cursor position="859" topLine="37" />
+	</File>
+	<File name="src/main.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="0" topLine="19" />
+	</File>
+	<File name="src/smuon.cpp" open="1" top="0" tabpos="12">
+		<Cursor position="2394" topLine="119" />
+	</File>
+	<File name="src/smurfbrain.cpp" open="1" top="0" tabpos="13">
+		<Cursor position="8002" topLine="295" />
+	</File>
+	<File name="src/smurfbrain.h" open="1" top="0" tabpos="19">
+		<Cursor position="3300" topLine="124" />
+	</File>
+	<File name="src/smurfcfg.cpp" open="1" top="1" tabpos="14">
+		<Cursor position="7137" topLine="217" />
+	</File>
+	<File name="src/smurfconnection.cpp" open="1" top="0" tabpos="15">
+		<Cursor position="1922" topLine="49" />
+	</File>
+	<File name="src/smurfutils.cpp" open="1" top="0" tabpos="16">
+		<Cursor position="1187" topLine="28" />
+	</File>
+	<File name="src/testApp.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="11420" topLine="487" />
+	</File>
+	<File name="src/testApp.h" open="1" top="0" tabpos="4">
+		<Cursor position="902" topLine="24" />
+	</File>
+</CodeBlocks_layout_file>

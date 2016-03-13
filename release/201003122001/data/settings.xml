@@ -1,0 +1,7 @@
+<smurf>
+  <settings>
+      <OscSendAddress>"localhost"</OscSendAddress>
+      <OscSendPort>12345</OscSendPort>
+      <TuioPort>3333</TuioPort>
+  </settings>
+</smurf>

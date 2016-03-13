@@ -1,0 +1,30 @@
+<install>
+
+	<version>0.4</version>
+	<author>Mehmet Akten</author>
+	<url>code.google.com/p/ofxmsaof/</url>
+
+    <requires>
+	</requires>
+    
+	<add>	
+		<src>
+			<folder name="addons/ofxTuio/src">
+				<file>../../../addons/ofxTuio/src/ofxTuioPoint.h</file>	
+				<file>../../../addons/ofxTuio/src/ofxTuioContainer.h</file>	
+				<file>../../../addons/ofxTuio/src/ofxTuioObject.h</file>	
+				<file>../../../addons/ofxTuio/src/ofxTuioCursor.h</file>	
+				<file>../../../addons/ofxTuio/src/ofxTuioClient.h</file>	
+				<file>../../../addons/ofxTuio/src/ofxTuio.h</file>	
+			</folder>
+		</src>
+		<include>
+			<path>../../../addons/ofxTuio/src</path>
+		</include>
+		
+		<link>
+		</link>
+
+	</add>
+	
+</install>

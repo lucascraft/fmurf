@@ -1,0 +1,25 @@
+<install>
+	
+	<version>0.04</version>
+	<author>Stjepan Rajko</author>
+	<url>http://ame4.hc.asu.edu/amelia/patterns/</url>
+	
+	
+	<add>
+
+		<!-- 	=====================================================================	-->
+		<!--	========================== add per project using this addon =========	-->
+		<!-- 	=====================================================================	-->
+			
+		<include>
+			<path>../../../addons/ofxGesture/src/</path>
+		</include>
+		
+   		<link>
+			<lib os="mac"   compiler="xcode">../../../addons/ofxGesture/libs/ofxGesture/lib/osx/libofxGesture.a</lib>
+			<lib os="mac"   compiler="xcode">../../../addons/ofxGesture/libs/ofxGesture/lib/osx/libboost_serialization-xgcc40-1_39.a</lib>
+		</link>
+
+	</add>
+	 
+</install>

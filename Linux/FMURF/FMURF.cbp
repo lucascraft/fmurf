@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="FMURF" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="addons/;src/;addons/ofxMSAFluid/src/;addons/ofxMSAInteractiveObject/src/;addons/ofxMSAUtils/libs/hashlib/src/;addons/ofxMSAUtils/src/;addons/ofxOsc/src/;addons/ofxPatterns/src/;addons/ofxSvg/src/;addons/ofxThread/src/;addons/ofxTuio/src/;addons/ofxVectorGraphics/libs/;addons/ofxVectorGraphics/src/;addons/ofXmlSettings/libs/;addons/ofXmlSettings/src/;addons/ofxSimpleGuiToo/;addons/ofxSimpleGuiToo/src/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/FMURF_debug" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Debug/" />
+				<Option external_deps="../../../libs/openFrameworksCompiled/lib/linux/libopenFrameworksDebug.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-MMD" />
+				</Compiler>
+				<Linker>
+					<Add library="openFrameworksDebug" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/FMURF" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Release/" />
+				<Option external_deps="../../../libs/openFrameworksCompiled/lib/linux/libopenFrameworks.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-march=native" />
+					<Add option="-MMD" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="openFrameworks" />
+					<Add library="../../../addons/ofxOsc/libs/oscpack/lib/linux/liboscpack.a" />
+					<Add library="../../../addons/ofxPatterns/libs/ofxPatterns/osx/libofxPatterns.a" />
+					<Add library="../../../addons/ofxPatterns/libs/ofxPatterns//osx/libboost_serialization.a" />
+				</Linker>
+			</Target>
+			<Environment>
+				<Variable name="target" value="FMURF" />
+				<Variable name="nautilusOnBuild" value="false" />
+				<Variable name="runOnBuild" value="false" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="../../../addons/" />
+			<Add directory="../../../libs/openFrameworks/" />
+			<Add directory="../../../libs/openFrameworks/events" />
+			<Add directory="../../../libs/openFrameworks/app" />
+			<Add directory="../../../libs/openFrameworks/communication" />
+			<Add directory="../../../libs/openFrameworks/graphics" />
+			<Add directory="../../../libs/openFrameworks/video" />
+			<Add directory="../../../libs/openFrameworks/utils" />
+			<Add directory="../../../libs/openFrameworks/sound" />
+			<Add directory="../../../libs/rtAudio" />
+			<Add directory="../../../libs/fmodex/include" />
+			<Add directory="../../../libs/glee/include" />
+			<Add directory="../../../libs/FreeImage/include" />
+			<Add directory="../../../libs/freetype/include" />
+			<Add directory="../../../libs/freetype/include/freetype2" />
+			<Add directory="../../../libs/unicap/include" />
+			<Add directory="../../../libs/gstappsink/include" />
+			<Add directory="../../../addons" />
+			<Add directory="../../../libs/poco/include" />
+			<Add directory="../../../addons/ofxOsc/src" />
+			<Add directory="../../../addons/ofxOsc/libs/oscpack/include/ip" />
+			<Add directory="../../../addons/ofxOsc/libs/oscpack/include/osc" />
+			<Add directory="../../../addons/ofxVectorGraphics/src" />
+			<Add directory="../../../addons/ofxVectorGraphics/libs" />
+			<Add directory="../../../addons/ofxTuio/src" />
+			<Add directory="../../../addons/ofxMSAUtils/src" />
+			<Add directory="../../../addons/ofxMSAUtils/libs/hashlib/src/" />
+			<Add directory="../../../addons/ofxXmlSettings/src" />
+			<Add directory="../../../addons/ofxXmlSettings/libs" />
+			<Add directory="../../../addons/ofxMSAFluid/src" />
+			<Add directory="../../../addons/ofxThread/src" />
+			<Add directory="../../../addons/ofxSvg/src" />
+			<Add directory="../../../addons/ofxSimpleGuiToo/src" />
+			<Add directory="../../../addons/ofxSimpleGuiToo/src/Controls" />
+			<Add directory="../../../addons/ofxMSAInteractiveObject/src" />
+			<Add directory="../../../addons/ofxPatterns/src/" />
+		</Compiler>
+		<Linker>
+			<Add library="openFrameworks" />
+			<Add library="fmodex" />
+			<Add library="raw1394" />
+			<Add library="glut" />
+			<Add library="GL" />
+			<Add library="GLU" />
+			<Add library="Xxf86vm" />
+			<Add library="asound" />
+			<Add library="PocoFoundation" />
+			<Add library="unicap" />
+			<Add library="freetype" />
+			<Add library="freeimage" />
+			<Add library="RtAudio" />
+			<Add library="GLee" />
+			<Add library="oFappsink" />
+			<Add library="../../../addons/ofxOsc/libs/oscpack/lib/linux/liboscpack.a" />
+			<Add library="../../../addons/ofxPatterns/libs/ofxPatterns/osx/libofxPatterns.a" />
+			<Add library="../../../addons/ofxPatterns/libs/ofxPatterns//osx/libboost_serialization.a" />
+			<Add directory="../../../libs/openFrameworksCompiled/lib/linux" />
+			<Add directory="../../../libs/freetype/lib/linux" />
+			<Add directory="../../../libs/FreeImage/lib/linux" />
+			<Add directory="../../../libs/rtAudio/lib/linux" />
+			<Add directory="../../../libs/glee/lib/linux" />
+			<Add directory="../../../libs/gstappsink/lib/linux" />
+			<Add directory="../../../libs/fmodex/lib/linux" />
+			<Add directory="../../../libs/unicap/lib/linux" />
+			<Add directory="../../../libs/poco/lib/linux" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="#" />
+			<Add after="#      copy libs and shell script to bin directory:" />
+			<Add after="#" />
+			<Add after="cp -r ../../../export/linux/libs $(PROJECT_DIR)bin/" />
+			<Add after="cp ../../../export/linux/clickToLaunchApp.sh $(PROJECT_DIR)bin/clickToLaunchApp_$(TARGET_NAME).sh" />
+			<Add after="sed -i s/applicationName/$(TARGET_OUTPUT_BASENAME)/g  $(PROJECT_DIR)bin/clickToLaunchApp_$(TARGET_NAME).sh" />
+			<Add after="#" />
+			<Add after="#    this is a shell script that can either (a) run the app or (b) launch nautilus to a good directory for you to run the app" />
+			<Add after="#" />
+			<Add after="./cb_build_runner.sh $(TARGET_OUTPUT_BASENAME) $runOnBuild $nautilusOnBuild" />
+			<Add after="#" />
+			<Add after="#     to enable either, change the custom variables in project-&gt;build options-&gt;custom variables" />
+			<Add after="#     to true / false." />
+			<Add after="#" />
+			<Add after="#     currently this is disabled, but allows you to run the app from w/in CB." />
+			<Add after="#" />
+			<Mode after="always" />
+		</ExtraCommands>
+		<Unit filename="../../../addons/ofxMSAFluid/src/ofxMSAFluid.h">
+			<Option virtualFolder="addons/ofxMSAFluid/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAFluid/src/ofxMSAFluidDrawer.cpp">
+			<Option virtualFolder="addons/ofxMSAFluid/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAFluid/src/ofxMSAFluidDrawer.h">
+			<Option virtualFolder="addons/ofxMSAFluid/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAFluid/src/ofxMSAFluidParticleUpdater.h">
+			<Option virtualFolder="addons/ofxMSAFluid/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAFluid/src/ofxMSAFluidSolver.cpp">
+			<Option virtualFolder="addons/ofxMSAFluid/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAFluid/src/ofxMSAFluidSolver.h">
+			<Option virtualFolder="addons/ofxMSAFluid/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAInteractiveObject/src/ofxMSAInteractiveObject.cpp">
+			<Option virtualFolder="addons/ofxMSAInteractiveObject/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAInteractiveObject/src/ofxMSAInteractiveObject.h">
+			<Option virtualFolder="addons/ofxMSAInteractiveObject/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hashlibpp.h">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_exception.h">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_hashwrapper.h">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_md5.cpp">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_md5.h">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_md5wrapper.cpp">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_md5wrapper.h">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_sha1.cpp">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_sha1.h">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_sha1wrapper.cpp">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_sha1wrapper.h">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_sha256.cpp">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_sha256.h">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_sha256wrapper.cpp">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_sha256wrapper.h">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_sha2ext.cpp">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_sha2ext.h">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_sha2mac.h">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_sha384wrapper.cpp">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_sha384wrapper.h">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_sha512wrapper.cpp">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_sha512wrapper.h">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/libs/hashlib/src/hl_types.h">
+			<Option virtualFolder="addons/ofxMSAUtils/libs/hashlib/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/src/ofxMSADataProtector.cpp">
+			<Option virtualFolder="addons/ofxMSAUtils/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/src/ofxMSADataProtector.h">
+			<Option virtualFolder="addons/ofxMSAUtils/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/src/ofxMSAPerlin.cpp">
+			<Option virtualFolder="addons/ofxMSAUtils/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/src/ofxMSAPerlin.h">
+			<Option virtualFolder="addons/ofxMSAUtils/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/src/ofxMSAUtils.cpp">
+			<Option virtualFolder="addons/ofxMSAUtils/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxMSAUtils/src/ofxMSAUtils.h">
+			<Option virtualFolder="addons/ofxMSAUtils/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOsc.h">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscArg.h">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscBundle.cpp">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscBundle.h">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscMessage.cpp">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscMessage.h">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscReceiver.cpp">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscReceiver.h">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscSender.cpp">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxOsc/src/ofxOscSender.h">
+			<Option virtualFolder="addons/ofxOsc/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxPatterns/src/ofxMouseGestureClassification.h">
+			<Option virtualFolder="addons/ofxPatterns/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxPatterns/src/ofxPatternClassification.h">
+			<Option virtualFolder="addons/ofxPatterns/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxPatterns/src/ofxPatternRecognition.h">
+			<Option virtualFolder="addons/ofxPatterns/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxPatterns/src/ofxSpeechClassification.h">
+			<Option virtualFolder="addons/ofxPatterns/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxPatterns/src/ofxVectorGestureClassification.h">
+			<Option virtualFolder="addons/ofxPatterns/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxPatterns/src/ofxVectorGestureRecognition.h">
+			<Option virtualFolder="addons/ofxPatterns/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiButton.cpp">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiButton.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiColorPicker.cpp">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiColorPicker.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiConfig.cpp">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiConfig.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiContent.cpp">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiContent.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiControl.cpp">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiControl.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiFPSCounter.cpp">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiFPSCounter.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiIncludes.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiMovieSlider.cpp">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiMovieSlider.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiOption.cpp">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiOption.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiOptionGroup.cpp">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiOptionGroup.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiPage.cpp">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiPage.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiQuadWarp.cpp">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiQuadWarp.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiSlider2d.cpp">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiSlider2d.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiSliderBase.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiSliderFloat.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiSliderInt.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiTitle.cpp">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiTitle.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiToggle.cpp">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiToggle.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiToo.cpp">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiToo.h">
+			<Option virtualFolder="addons/ofxSimpleGuiToo/src/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/src/ofxSvg.h">
+			<Option virtualFolder="addons/ofxSvg/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/src/ofxSvgClosePath.h">
+			<Option virtualFolder="addons/ofxSvg/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/src/ofxSvgCommand.h">
+			<Option virtualFolder="addons/ofxSvg/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/src/ofxSvgCommandHandle.h">
+			<Option virtualFolder="addons/ofxSvg/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/src/ofxSvgCurveTo.h">
+			<Option virtualFolder="addons/ofxSvg/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/src/ofxSvgHorizontalLineTo.h">
+			<Option virtualFolder="addons/ofxSvg/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/src/ofxSvgLineTo.h">
+			<Option virtualFolder="addons/ofxSvg/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/src/ofxSvgMoveTo.h">
+			<Option virtualFolder="addons/ofxSvg/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/src/ofxSvgPath.h">
+			<Option virtualFolder="addons/ofxSvg/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/src/ofxSvgPathContext.h">
+			<Option virtualFolder="addons/ofxSvg/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/src/ofxSvgSmoothCurveTo.h">
+			<Option virtualFolder="addons/ofxSvg/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxSvg/src/ofxSvgVerticalLineTo.h">
+			<Option virtualFolder="addons/ofxSvg/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxThread/src/ofxThread.cpp">
+			<Option virtualFolder="addons/ofxThread/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxThread/src/ofxThread.h">
+			<Option virtualFolder="addons/ofxThread/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTuio/src/ofxTuio.h">
+			<Option virtualFolder="addons/ofxTuio/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTuio/src/ofxTuioClient.h">
+			<Option virtualFolder="addons/ofxTuio/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTuio/src/ofxTuioContainer.h">
+			<Option virtualFolder="addons/ofxTuio/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTuio/src/ofxTuioCursor.h">
+			<Option virtualFolder="addons/ofxTuio/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTuio/src/ofxTuioObject.h">
+			<Option virtualFolder="addons/ofxTuio/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxTuio/src/ofxTuioPoint.h">
+			<Option virtualFolder="addons/ofxTuio/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxVectorGraphics/libs/CreEPS.cpp">
+			<Option virtualFolder="addons/ofxVectorGraphics/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxVectorGraphics/libs/CreEPS.hpp">
+			<Option virtualFolder="addons/ofxVectorGraphics/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxVectorGraphics/src/ofxVectorGraphics.cpp">
+			<Option virtualFolder="addons/ofxVectorGraphics/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxVectorGraphics/src/ofxVectorGraphics.h">
+			<Option virtualFolder="addons/ofxVectorGraphics/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/libs/tinyxml.cpp">
+			<Option virtualFolder="addons/ofXmlSettings/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/libs/tinyxml.h">
+			<Option virtualFolder="addons/ofXmlSettings/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp">
+			<Option virtualFolder="addons/ofXmlSettings/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp">
+			<Option virtualFolder="addons/ofXmlSettings/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp">
+			<Option virtualFolder="addons/ofXmlSettings/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/src/ofxXmlSettings.h">
+			<Option virtualFolder="addons/ofXmlSettings/src" />
+		</Unit>
+		<Unit filename="src/FMFOscillator.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/Particle.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/Particle.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/ParticleSystem.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/ParticleSystem.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/connectionutils.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/connectionutils.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/eventsObject.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/fmfadd.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/fmfdac.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/fmfmultiply.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/fmfoscillator.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/fmfphasor.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/fmfsampler.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/fmfsequencer.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/fmftempo.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/fmftypes.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/fmfutils.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/fmfutils.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/gestures.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/gestures.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/main.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/slot.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/slot.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smidget.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smidget.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smuon.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smuon.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurf.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurf.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfEvt.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfanchor.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfanchor.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfbeat.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfbrain.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfbrain.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfcfg.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfcfg.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfconnection.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfconnection.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfer.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfevent.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfevent.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfinger.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfinger.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfloor.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfloor.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfutils.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfutils.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfvisuals.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/smurfvisuals.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/swave.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/swave.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/testApp.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/testApp.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/wiistuff.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/wiistuff.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Extensions>
+			<lib_finder>
+				<lib name="gstreamer-0.10" />
+				<lib name="gstreamer-video-0.10" />
+				<lib name="gstreamer-base-0.10" />
+				<lib name="libudev" />
+			</lib_finder>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,36 @@
+<install>
+
+	<version></version>
+	<author></author>
+	<url></url>
+
+    <requires>
+	</requires>
+    
+	<add>	
+		<src>
+			<folder name="addons/ofxSvg/src">
+				<file>../../../addons/ofxSvg/src/ofxSvgClosePath.h</file>	
+				<file>../../../addons/ofxSvg/src/ofxSvgCommand.h</file>	
+				<file>../../../addons/ofxSvg/src/ofxSvgCommandHandle.h</file>	
+				<file>../../../addons/ofxSvg/src/ofxSvgCurveTo.h</file>	
+				<file>../../../addons/ofxSvg/src/ofxSvg.h</file>	
+				<file>../../../addons/ofxSvg/src/ofxSvgHorizontalLineTo.h</file>	
+				<file>../../../addons/ofxSvg/src/ofxSvgLineTo.h</file>	
+				<file>../../../addons/ofxSvg/src/ofxSvgMoveTo.h</file>	
+				<file>../../../addons/ofxSvg/src/ofxSvgPathContext.h</file>	
+				<file>../../../addons/ofxSvg/src/ofxSvgPath.h</file>	
+				<file>../../../addons/ofxSvg/src/ofxSvgSmoothCurveTo.h</file>	
+				<file>../../../addons/ofxSvg/src/ofxSvgVerticalLineTo.h</file>	
+			</folder>
+		</src>
+		<include>
+			<path>../../../addons/ofxSvg/src</path>
+		</include>
+		
+		<link>
+		</link>
+
+	</add>
+	
+</install>

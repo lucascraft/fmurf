@@ -1,0 +1,646 @@
+<smurf>
+
+  <settings>
+      <OscSendAddress>localhost</OscSendAddress>
+      <OscSendPort>4444</OscSendPort>
+      <OscReceivePort>4445</OscReceivePort>
+      <TuioPort>3333</TuioPort>
+  </settings>
+  
+  <fid> 
+	  <id>0</id>
+	  <style>SQUARE</style>
+	  <kind>SIN_OSC</kind>
+	  <BG>Blue</BG>
+	  <FG>Blue</FG>
+	  <radius>30.0</radius>
+	  <proxima>110.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid>
+	  <id>1</id>
+	  <style>PENTAGON</style>
+	  <kind>SQR_OSC</kind>
+	  <BG>Dark Turquoise</BG>
+	  <FG>Dark Turquoise</FG>
+	  <radius>30.0</radius>
+	  <proxima>110.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+   </fid>
+  
+  <fid>
+	  <id>2</id>
+	  <style>HEXAGON</style>
+	  <kind>SIN_OSC</kind>
+	  <BG>Blue</BG>
+	  <FG>Dark Turquoise</FG>
+	  <radius>30.0</radius>
+	  <proxima>110.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+   </fid>
+   <fid> 
+	  <id>3</id>
+	  <style>DISC</style>
+	  <kind>SIN_OSC</kind>
+	  <BG>Dark Turquoise</BG>
+	  <FG>Dark Turquoise</FG>
+	  <radius>30.0</radius>
+	  <proxima>110.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>4</id>
+	  <style>DISC</style>
+	  <kind>SAWTOOTH_OSC</kind>
+	  <BG>Dark Turquoise</BG>
+	  <FG>Dark Turquoise</FG>
+	  <radius>30.0</radius>
+	  <proxima>110.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>5</id>
+	  <style>DISC</style>
+	  <kind>SIN_OSC</kind>
+	  <BG>Dark Turquoise</BG>
+	  <FG>Dark Turquoise</FG>
+	  <radius>30.0</radius>
+	  <proxima>110.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>6</id>
+	  <style>DISC</style>
+	  <kind>SQR_OSC</kind>
+	  <BG>Orange</BG>
+	  <FG>Orange</FG>
+	  <radius>30.0</radius>
+	  <proxima>110.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>NONE</function>
+  </fid>
+  
+  <fid> 
+	  <id>7</id>
+	  <style>DISC</style>
+	  <kind>PHASOR</kind>
+	  <BG>Medium Sea Green</BG>
+	  <FG>Medium Sea Green</FG>
+	  <radius>30.0</radius>
+	  <proxima>110.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>NONE</function>
+  </fid>
+  
+  <fid> 
+	  <id>8</id>
+	  <style>EIGHTSTAR</style>
+	  <kind>SAMPLER</kind>
+	  <BG>Yellow</BG>
+	  <FG>Yellow</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>9</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Maroon</BG>
+	  <FG>Maroon</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>10</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Sienna</BG>
+	  <FG>Sienna</FG>
+	  <radius>30.0</radius>
+	  <proximaVisible>True</proximaVisible>
+	  <proxima>170.0</proxima>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>11</id>
+	  <style>DISC</style>
+	  <kind>PHAZOR</kind>
+	  <BG>Dusty Rose</BG>
+	  <FG>Dusty Rose</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>12</id>
+	  <style>DISC</style>
+	  <kind>PHAZOR</kind>
+	  <BG>Feldspar</BG>
+	  <FG>Feldspar</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>13</id>
+	  <style>DISC</style>
+	  <kind>PHAZOR</kind>
+	  <BG>Firebrick</BG>
+	  <FG>Firebrick</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>14</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Forest Green</BG>
+	  <FG>Forest Green</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>15</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Goldenrod</BG>
+	  <FG>Goldenrod</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>16</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Green Copper</BG>
+	  <FG>Green Copper</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>17</id>
+	  <style>DISC</style>
+	  <BG>Hunter Green</BG>
+	  <FG>Hunter Green</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>18</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Indian Red</BG>
+	  <FG>Indian Red</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>19</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Khaki</BG>
+	  <FG>Khaki</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+
+  <fid> 
+	  <id>20</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Orchid</BG>
+	  <FG>Orchid</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>21</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Quartz</BG>
+	  <FG>Quartz</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>22</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Scarlet</BG>
+	  <FG>Scarlet</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <range>100.0</range>
+	  <proximaVisible>True</proximaVisible>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>23</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Turquoise</BG>
+	  <FG>Turquoise</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>24</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Copper</BG>
+	  <FG>Copper</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>25</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Cyan</BG>
+	  <FG>Cyan</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>26</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Violet</BG>
+	  <FG>Violet</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>27</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>White</BG>
+	  <FG>White</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>28</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Yellow</BG>
+	  <FG>Yellow</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>29</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Green</BG>
+	  <FG>Green</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>30</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Orange</BG>
+	  <FG>Orange</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>31</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Pink</BG>
+	  <FG>Pink</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>32</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Salmon</BG>
+	  <FG>Salmon</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>33</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Dim Grey</BG>
+	  <FG>Dim Grey</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>34</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Green</BG>
+	  <FG>Green</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <range>100.0</range>
+	  <proximaVisible>True</proximaVisible>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>35</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Green</BG>
+	  <FG>Green</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>36</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Green</BG>
+	  <FG>Green</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>37</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Green</BG>
+	  <FG>Green</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>38</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Green</BG>
+	  <FG>Green</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>39</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Green</BG>
+	  <FG>Green</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  <fid> 
+	  <id>40</id>
+	  <style>DISC</style>
+	  <kind>OSCILLATOR</kind>
+	  <BG>Green</BG>
+	  <FG>Green</FG>
+	  <radius>30.0</radius>
+	  <proxima>170.0</proxima>
+	  <proximaVisible>True</proximaVisible>
+	  <range>100.0</range>
+	  <function>KNOB</function>
+  </fid>
+  
+  
+  
+ 
+</smurf>
+
+  <!--
+  	"Aquamarine"
+	"Baker's Chocolate"
+	"Black"
+	"Blue"
+	"Brass"
+	"Bright Gold"
+	"Brown"
+	"Bronze"
+	"Gold"
+	"Grey"
+	"Green"
+	"Copper"
+	"Coral"
+	"Cyan"
+	"Dark Green"
+	"Green Yellow"
+	"Magenta"
+	"Maroon"
+	"Medium Blue"
+	"Sienna"
+	"Silver"
+	"Salmon"
+	"Orange"
+	"Pink"
+	"Red"
+	"Summer Sky"
+	"Tan"
+	"Thistle"
+	"Turquoise"
+	"Very Dark Brown"
+	"Very Light Grey"
+	"Violet"
+	"Violet Red"
+	"Wheat"
+	"White"
+	"Yellow"
+	"Yellow Green"
+	"Dark Yellow"
+	"Bronze II"
+	"Cadet Blue"
+    "Cool Copper"
+	"Corn Flower Blue"
+	"Dark Brown"
+	"Dark Green Copper"
+	"Dark Olive Green"
+	"Dark Orchid"
+	"Dark Purple"
+	"Dark Slate Blue"
+	"Dark Turquoise"
+	"Dark Tan"
+	"Dark Turquoise"
+	"Dark Wood"
+	"Dim Grey"
+	"Dusty Rose"
+	"Feldspar"
+	"Firebrick"
+	"Forest Green"
+	"Goldenrod"
+	"Green Copper"
+	"Hunter Green"
+	"Indian Red"
+	"Khaki"
+	"Light Blue"
+	"Light Grey"
+	"Light Steel Blue"
+	"Light Wood"
+	"Lime Green"
+	"Mandarian Orange"
+	"Medium Aquamarine"
+	"Medium Forest Green"
+	"Medium Goldenrod"
+	"Medium Orchid"
+	"Medium Sea Green"
+	"Medium Slate Blue"
+	"Medium Spring Green"
+	"Medium Turquoise"
+	"Medium Violet Red"
+	"Medium Wood"
+	"Midnight Blue"
+	"Navy Blue"
+	"Neon Blue"
+	"Neon Pink"
+	"New Midnight Blue"
+	"New Tan"
+	"Old Gold"
+	"Orange Red"
+	"Orchid"
+	"Pale Green"
+	"Plum"
+	"Quartz"
+	"Rich Blue"
+	"Scarlet"
+	"Sea Green"
+	"Semi-Sweet Chocolate"
+	"Sky Blue"
+	"Slate Blue"
+	"Spicy Pink"
+	"Spring Green"
+	"Steel Blue"
+
+  -->

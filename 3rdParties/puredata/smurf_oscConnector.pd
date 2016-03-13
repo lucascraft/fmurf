@@ -1,0 +1,1207 @@
+#N canvas 0 22 1440 852 10;
+#X obj 159 58 OSCroute /smurf;
+#X obj 903 83 sendOSC;
+#X msg 997 34 disconnect;
+#X obj 199 186 unpack f f f;
+#X floatatom 199 206 5 0 0 0 - - -;
+#X floatatom 233 206 5 0 0 0 - - -;
+#X obj 159 84 OSCroute /fid /beat;
+#X floatatom 268 206 5 0 0 0 - - -;
+#X obj 159 165 smurf_fidParam;
+#X obj 338 187 unpack f f f;
+#X floatatom 338 208 5 0 0 0 - - -;
+#X floatatom 372 208 5 0 0 0 - - -;
+#X floatatom 407 208 5 0 0 0 - - -;
+#X obj 298 166 smurf_fidParam;
+#X obj 159 186 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 298 188 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 244 262 unpack f f f;
+#X floatatom 244 282 5 0 0 0 - - -;
+#X floatatom 278 282 5 0 0 0 - - -;
+#X floatatom 313 282 5 0 0 0 - - -;
+#X obj 204 241 smurf_fidParam;
+#X obj 383 263 unpack f f f;
+#X floatatom 383 284 5 0 0 0 - - -;
+#X floatatom 417 284 5 0 0 0 - - -;
+#X floatatom 452 284 5 0 0 0 - - -;
+#X obj 343 242 smurf_fidParam;
+#X obj 204 262 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 343 263 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 290 337 unpack f f f;
+#X floatatom 290 357 5 0 0 0 - - -;
+#X floatatom 324 357 5 0 0 0 - - -;
+#X floatatom 359 357 5 0 0 0 - - -;
+#X obj 250 316 smurf_fidParam;
+#X obj 429 338 unpack f f f;
+#X floatatom 429 359 5 0 0 0 - - -;
+#X floatatom 463 359 5 0 0 0 - - -;
+#X floatatom 498 359 5 0 0 0 - - -;
+#X obj 389 317 smurf_fidParam;
+#X obj 250 337 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 389 338 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 335 413 unpack f f f;
+#X floatatom 335 433 5 0 0 0 - - -;
+#X floatatom 369 433 5 0 0 0 - - -;
+#X floatatom 404 433 5 0 0 0 - - -;
+#X obj 295 392 smurf_fidParam;
+#X obj 474 414 unpack f f f;
+#X floatatom 474 435 5 0 0 0 - - -;
+#X floatatom 508 435 5 0 0 0 - - -;
+#X floatatom 543 435 5 0 0 0 - - -;
+#X obj 434 393 smurf_fidParam;
+#X obj 295 413 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 434 414 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 381 484 unpack f f f;
+#X floatatom 381 504 5 0 0 0 - - -;
+#X floatatom 415 504 5 0 0 0 - - -;
+#X floatatom 450 504 5 0 0 0 - - -;
+#X obj 341 463 smurf_fidParam;
+#X obj 520 485 unpack f f f;
+#X floatatom 520 506 5 0 0 0 - - -;
+#X floatatom 554 506 5 0 0 0 - - -;
+#X floatatom 589 506 5 0 0 0 - - -;
+#X obj 480 464 smurf_fidParam;
+#X obj 341 484 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 480 485 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 426 560 unpack f f f;
+#X floatatom 426 580 5 0 0 0 - - -;
+#X floatatom 460 580 5 0 0 0 - - -;
+#X floatatom 495 580 5 0 0 0 - - -;
+#X obj 386 539 smurf_fidParam;
+#X obj 565 561 unpack f f f;
+#X floatatom 565 582 5 0 0 0 - - -;
+#X floatatom 599 582 5 0 0 0 - - -;
+#X floatatom 634 582 5 0 0 0 - - -;
+#X obj 525 540 smurf_fidParam;
+#X obj 386 560 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 525 561 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 470 632 unpack f f f;
+#X floatatom 470 652 5 0 0 0 - - -;
+#X floatatom 504 652 5 0 0 0 - - -;
+#X floatatom 539 652 5 0 0 0 - - -;
+#X obj 430 611 smurf_fidParam;
+#X obj 609 633 unpack f f f;
+#X floatatom 609 654 5 0 0 0 - - -;
+#X floatatom 643 654 5 0 0 0 - - -;
+#X floatatom 678 654 5 0 0 0 - - -;
+#X obj 569 612 smurf_fidParam;
+#X obj 430 632 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 569 633 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 159 114 OSCroute /0 /1 /2 /3 /4 /5 /6 /7 /8 /9 /10 /11 /12 /16
+;
+#X obj 620 153 soundfiler;
+#X floatatom 882 127 5 0 0 0 - - -;
+#X floatatom 936 129 5 0 0 0 - - -;
+#X obj 999 129 print DEBUG;
+#X msg 997 10 connect localhost 4445;
+#X msg 1000 108 send /smurf/wiimote -1 0.4 0.5 0 0 0 0 0;
+#X obj 159 28 dumpOSC 4444;
+#X floatatom 31 379 5 0 0 0 - - -;
+#X floatatom 41 389 5 0 0 0 - - -;
+#X floatatom 62 378 5 0 0 0 - - -;
+#X floatatom 74 394 5 0 0 0 - - -;
+#X floatatom 26 548 5 0 0 0 - - -;
+#X floatatom 36 558 5 0 0 0 - - -;
+#X floatatom 68 536 5 0 0 0 - - -;
+#X floatatom 69 563 5 0 0 0 - - -;
+#X floatatom 0 708 5 0 0 0 - - -;
+#X floatatom 10 718 5 0 0 0 - - -;
+#X floatatom 31 707 5 0 0 0 - - -;
+#X floatatom 43 723 5 0 0 0 - - -;
+#X floatatom 237 710 5 0 0 0 - - -;
+#X floatatom 247 720 5 0 0 0 - - -;
+#X floatatom 268 709 5 0 0 0 - - -;
+#X floatatom 280 725 5 0 0 0 - - -;
+#X obj 1 588 AttDecSusRel;
+#X floatatom -88 377 5 0 0 0 - - -;
+#X floatatom -78 387 5 0 0 0 - - -;
+#X floatatom -57 376 5 0 0 0 - - -;
+#X floatatom -26 373 5 0 0 0 - - -;
+#X floatatom -93 546 5 0 0 0 - - -;
+#X floatatom -83 556 5 0 0 0 - - -;
+#X floatatom -62 545 5 0 0 0 - - -;
+#X floatatom -50 561 5 0 0 0 - - -;
+#X floatatom -119 706 5 0 0 0 - - -;
+#X floatatom -109 716 5 0 0 0 - - -;
+#X floatatom -88 705 5 0 0 0 - - -;
+#X floatatom -76 721 5 0 0 0 - - -;
+#X floatatom 118 708 5 0 0 0 - - -;
+#X floatatom 128 718 5 0 0 0 - - -;
+#X floatatom 149 707 5 0 0 0 - - -;
+#X floatatom 161 723 5 0 0 0 - - -;
+#X obj -84 284 loadbang;
+#N canvas 50 48 1390 852 liveDataMessageGenerator1 0;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array oscLiveData1 67 float 1;
+#A 0 -0.00787509 0 0.00787509 0.0156743 0.0233226 0.0307463 0.0378739
+0.0446367 0.0509697 0.0568118 0.0621067 0.0668036 0.0708571 0.0742282
+0.0768844 0.0788002 0.0799571 0.080344 0.0799572 0.0788003 0.0768845
+0.0742283 0.0708572 0.0668037 0.0621069 0.0568119 0.0509698 0.0446369
+0.0378741 0.0307465 0.0233228 0.0156745 0.0078753 2.132e-07 -0.00787487
+-0.0156741 -0.0233224 -0.0307461 -0.0378737 -0.0446365 -0.0509695 -0.0568116
+-0.0621066 -0.0668035 -0.070857 -0.0742281 -0.0768844 -0.0788002 -0.0799571
+-0.080344 -0.0799572 -0.0788003 -0.0768845 -0.0742283 -0.0708573 -0.0668038
+-0.062107 -0.0568121 -0.05097 -0.0446371 -0.0378743 -0.0307467 -0.023323
+-0.0156747 -0.00787551 -4.264e-07 0.00787466;
+#X coords 0 1 66 -1 200 140 1;
+#X restore 319 209 graph;
+#X text 374 136 Fourier synthesis (resizes table);
+#X obj 589 503 until;
+#X obj 782 485 pack s f;
+#X obj 782 433 t b f;
+#X obj 590 542 f;
+#X obj 624 542 + 1;
+#X obj 591 612 s \$1-value;
+#X obj 782 407 r \$1-value;
+#X obj 782 514 route list;
+#X text 855 580 store the list;
+#X obj 849 562 textfile;
+#X msg 911 535 rewind;
+#X obj 782 459 symbol add2;
+#X obj 876 490 bng 15 250 50 0 empty empty THEN_Print_the_list 18 7
+0 8 -24198 -1 -1;
+#X msg 695 511 clear;
+#X obj 876 511 t b b;
+#X msg 640 510 0;
+#X obj 588 413 bng 15 250 50 0 empty empty Bang_me 18 7 0 8 -24198
+-1 -1;
+#X obj 589 464 t b f b;
+#X msg 748 338 add2 \$1;
+#X msg 766 309 send /smurf/fid/1/live -0.00787509 0 0.00787509 0.0156743
+0.0233226 0.0307463 0.0378739 0.0446367 0.0509697 0.0568118 0.0621067
+0.0668036 0.0708571 0.0742282 0.0768844 0.0788002 0.0799571 0.080344
+0.0799572 0.0788003 0.0768845 0.0742283 0.0708572 0.0668037 0.0621069
+0.0568119 0.0509698 0.0446369 0.0378741 0.0307465 0.0233228 0.0156745
+0.0078753 2.132e-07 -0.00787487 -0.0156741 -0.0233224 -0.0307461 -0.0378737
+-0.0446365 -0.0509695 -0.0568116 -0.0621066 -0.0668035 -0.070857 -0.0742281
+-0.0768844 -0.0788002 -0.0799571 -0.080344 -0.0799572 -0.0788003 -0.0768845
+-0.0742283 -0.0708573 -0.0668038 -0.062107 -0.0568121 -0.05097 -0.0446371
+-0.0378743 -0.0307467 -0.023323 -0.0156747 -0.00787551 -4.264e-07 0.00787466
+;
+#X obj 243 67 inlet;
+#X obj 691 708 outlet;
+#X msg 709 272 set send /smurf/fid/1/live;
+#X obj 588 433 arraysize oscLiveData1;
+#X obj 590 570 tabread oscLiveData1;
+#X obj 377 90 inlet;
+#X obj 426 122 * 0.5;
+#X msg 370 160 \; oscLiveData1 sinesum 64 \$1;
+#X connect 2 0 5 0;
+#X connect 3 0 9 0;
+#X connect 4 0 13 0;
+#X connect 4 1 3 1;
+#X connect 5 0 6 0;
+#X connect 5 0 26 0;
+#X connect 6 0 5 1;
+#X connect 8 0 4 0;
+#X connect 9 0 11 0;
+#X connect 12 0 11 0;
+#X connect 13 0 3 0;
+#X connect 14 0 16 0;
+#X connect 15 0 11 0;
+#X connect 16 0 11 0;
+#X connect 16 1 12 0;
+#X connect 17 0 5 1;
+#X connect 18 0 25 0;
+#X connect 19 0 14 0;
+#X connect 19 0 21 0;
+#X connect 19 1 2 0;
+#X connect 19 2 15 0;
+#X connect 19 2 17 0;
+#X connect 19 2 24 0;
+#X connect 20 0 21 0;
+#X connect 21 0 23 0;
+#X connect 22 0 18 0;
+#X connect 24 0 21 0;
+#X connect 25 0 19 0;
+#X connect 26 0 7 0;
+#X connect 26 0 20 0;
+#X connect 27 0 28 0;
+#X connect 28 0 29 0;
+#X restore 825 266 pd liveDataMessageGenerator1;
+#N canvas 143 63 1196 760 liveDataMessageGenerator0 0;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array oscLiveData0 67 float 1;
+#A 0 -0.00844035 0 0.00844035 0.0167994 0.0249967 0.0329533 0.0405924
+0.0478407 0.0546282 0.0608897 0.0665647 0.0715987 0.0759431 0.0795562
+0.0824031 0.0844564 0.0856964 0.0861111 0.0856964 0.0844565 0.0824032
+0.0795563 0.0759432 0.0715988 0.0665649 0.0608898 0.0546284 0.0478409
+0.0405926 0.0329535 0.0249969 0.0167996 0.00844058 2.28503e-07 -0.00844013
+-0.0167992 -0.0249965 -0.032953 -0.0405922 -0.0478405 -0.0546281 -0.0608895
+-0.0665646 -0.0715986 -0.075943 -0.0795561 -0.0824031 -0.0844564 -0.0856964
+-0.0861111 -0.0856964 -0.0844565 -0.0824033 -0.0795564 -0.0759434 -0.0715989
+-0.066565 -0.06089 -0.0546286 -0.0478411 -0.0405928 -0.0329537 -0.0249971
+-0.0167999 -0.00844081 -4.57007e-07 0.0084399;
+#X coords 0 1 66 -1 200 140 1;
+#X restore 329 219 graph;
+#X text 384 146 Fourier synthesis (resizes table);
+#X obj 599 513 until;
+#X obj 792 495 pack s f;
+#X obj 792 443 t b f;
+#X obj 600 552 f;
+#X obj 634 552 + 1;
+#X obj 601 622 s \$1-value;
+#X obj 792 417 r \$1-value;
+#X obj 792 524 route list;
+#X text 865 590 store the list;
+#X obj 859 572 textfile;
+#X msg 921 545 rewind;
+#X obj 792 469 symbol add2;
+#X obj 886 500 bng 15 250 50 0 empty empty THEN_Print_the_list 18 7
+0 8 -24198 -1 -1;
+#X msg 705 521 clear;
+#X obj 886 521 t b b;
+#X msg 650 520 0;
+#X obj 598 423 bng 15 250 50 0 empty empty Bang_me 18 7 0 8 -24198
+-1 -1;
+#X obj 599 474 t b f b;
+#X msg 758 348 add2 \$1;
+#X msg 847 311 send /smurf/fid/0/live -0.00844035 0 0.00844035 0.0167994
+0.0249967 0.0329533 0.0405924 0.0478407 0.0546282 0.0608897 0.0665647
+0.0715987 0.0759431 0.0795562 0.0824031 0.0844564 0.0856964 0.0861111
+0.0856964 0.0844565 0.0824032 0.0795563 0.0759432 0.0715988 0.0665649
+0.0608898 0.0546284 0.0478409 0.0405926 0.0329535 0.0249969 0.0167996
+0.00844058 2.28503e-07 -0.00844013 -0.0167992 -0.0249965 -0.032953
+-0.0405922 -0.0478405 -0.0546281 -0.0608895 -0.0665646 -0.0715986 -0.075943
+-0.0795561 -0.0824031 -0.0844564 -0.0856964 -0.0861111 -0.0856964 -0.0844565
+-0.0824033 -0.0795564 -0.0759434 -0.0715989 -0.066565 -0.06089 -0.0546286
+-0.0478411 -0.0405928 -0.0329537 -0.0249971 -0.0167999 -0.00844081
+-4.57007e-07 0.0084399;
+#X obj 253 77 inlet;
+#X obj 701 718 outlet;
+#X msg 719 282 set send /smurf/fid/0/live;
+#X obj 598 443 arraysize oscLiveData0;
+#X obj 600 580 tabread oscLiveData0;
+#X obj 367 80 inlet;
+#X msg 380 170 \; oscLiveData0 sinesum 64 \$1;
+#X obj 416 112 * 0.5;
+#X connect 2 0 5 0;
+#X connect 3 0 9 0;
+#X connect 4 0 13 0;
+#X connect 4 1 3 1;
+#X connect 5 0 6 0;
+#X connect 5 0 26 0;
+#X connect 6 0 5 1;
+#X connect 8 0 4 0;
+#X connect 9 0 11 0;
+#X connect 12 0 11 0;
+#X connect 13 0 3 0;
+#X connect 14 0 16 0;
+#X connect 15 0 11 0;
+#X connect 16 0 11 0;
+#X connect 16 1 12 0;
+#X connect 17 0 5 1;
+#X connect 18 0 25 0;
+#X connect 19 0 14 0;
+#X connect 19 0 21 0;
+#X connect 19 1 2 0;
+#X connect 19 2 15 0;
+#X connect 19 2 17 0;
+#X connect 19 2 24 0;
+#X connect 20 0 21 0;
+#X connect 21 0 23 0;
+#X connect 22 0 18 0;
+#X connect 24 0 21 0;
+#X connect 25 0 19 0;
+#X connect 26 0 7 0;
+#X connect 26 0 20 0;
+#X connect 27 0 29 0;
+#X connect 29 0 28 0;
+#X restore 868 233 pd liveDataMessageGenerator0;
+#N canvas 0 22 1314 786 liveDataMessageGenerator2 0;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array oscLiveData2 67 float 1;
+#A 0 -0.0196034 0 0.0196034 0.039018 0.0580569 0.0765366 0.0942793
+0.111114 0.126879 0.141421 0.154602 0.166294 0.176384 0.184776 0.191388
+0.196157 0.199037 0.2 0.199037 0.196157 0.191388 0.184776 0.176384
+0.166294 0.154602 0.141422 0.126879 0.111114 0.0942797 0.0765371 0.0580574
+0.0390186 0.0196039 5.30718e-07 -0.0196029 -0.0390175 -0.0580564 -0.0765361
+-0.0942788 -0.111114 -0.126878 -0.141421 -0.154602 -0.166294 -0.176384
+-0.184776 -0.191388 -0.196157 -0.199037 -0.2 -0.199037 -0.196157 -0.191388
+-0.184776 -0.176385 -0.166294 -0.154603 -0.141422 -0.126879 -0.111115
+-0.0942802 -0.0765376 -0.0580579 -0.0390191 -0.0196045 -1.06144e-06
+0.0196024;
+#X coords 0 1 66 -1 200 140 1;
+#X restore 339 229 graph;
+#X text 394 156 Fourier synthesis (resizes table);
+#X obj 609 523 until;
+#X obj 802 505 pack s f;
+#X obj 802 453 t b f;
+#X obj 610 562 f;
+#X obj 644 562 + 1;
+#X obj 611 632 s \$1-value;
+#X obj 802 427 r \$1-value;
+#X obj 802 534 route list;
+#X text 875 600 store the list;
+#X obj 869 582 textfile;
+#X msg 931 555 rewind;
+#X obj 802 479 symbol add2;
+#X obj 896 510 bng 15 250 50 0 empty empty THEN_Print_the_list 18 7
+0 8 -24198 -1 -1;
+#X msg 715 531 clear;
+#X obj 896 531 t b b;
+#X msg 660 530 0;
+#X obj 608 433 bng 15 250 50 0 empty empty Bang_me 18 7 0 8 -24198
+-1 -1;
+#X obj 609 484 t b f b;
+#X msg 768 358 add2 \$1;
+#X msg 857 321 send /smurf/fid/2/live -0.0196034 0 0.0196034 0.039018
+0.0580569 0.0765366 0.0942793 0.111114 0.126879 0.141421 0.154602 0.166294
+0.176384 0.184776 0.191388 0.196157 0.199037 0.2 0.199037 0.196157
+0.191388 0.184776 0.176384 0.166294 0.154602 0.141422 0.126879 0.111114
+0.0942797 0.0765371 0.0580574 0.0390186 0.0196039 5.30718e-07 -0.0196029
+-0.0390175 -0.0580564 -0.0765361 -0.0942788 -0.111114 -0.126878 -0.141421
+-0.154602 -0.166294 -0.176384 -0.184776 -0.191388 -0.196157 -0.199037
+-0.2 -0.199037 -0.196157 -0.191388 -0.184776 -0.176385 -0.166294 -0.154603
+-0.141422 -0.126879 -0.111115 -0.0942802 -0.0765376 -0.0580579 -0.0390191
+-0.0196045 -1.06144e-06 0.0196024;
+#X obj 263 87 inlet;
+#X obj 711 728 outlet;
+#X msg 729 292 set send /smurf/fid/2/live;
+#X obj 608 453 arraysize oscLiveData2;
+#X obj 610 590 tabread oscLiveData2;
+#X obj 387 100 inlet;
+#X obj 436 132 * 0.5;
+#X msg 390 180 \; oscLiveData2 sinesum 64 \$1;
+#X connect 2 0 5 0;
+#X connect 3 0 9 0;
+#X connect 4 0 13 0;
+#X connect 4 1 3 1;
+#X connect 5 0 6 0;
+#X connect 5 0 26 0;
+#X connect 6 0 5 1;
+#X connect 8 0 4 0;
+#X connect 9 0 11 0;
+#X connect 12 0 11 0;
+#X connect 13 0 3 0;
+#X connect 14 0 16 0;
+#X connect 15 0 11 0;
+#X connect 16 0 11 0;
+#X connect 16 1 12 0;
+#X connect 17 0 5 1;
+#X connect 18 0 25 0;
+#X connect 19 0 14 0;
+#X connect 19 0 21 0;
+#X connect 19 1 2 0;
+#X connect 19 2 15 0;
+#X connect 19 2 17 0;
+#X connect 19 2 24 0;
+#X connect 20 0 21 0;
+#X connect 21 0 23 0;
+#X connect 22 0 18 0;
+#X connect 24 0 21 0;
+#X connect 25 0 19 0;
+#X connect 26 0 7 0;
+#X connect 26 0 20 0;
+#X connect 27 0 28 0;
+#X connect 28 0 29 0;
+#X restore 827 304 pd liveDataMessageGenerator2;
+#N canvas 0 22 1288 722 liveDataMessageGenerator3 0;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array oscLiveData3 67 float 1;
+#A 0 -0.0196034 0 0.0196034 0.039018 0.0580569 0.0765366 0.0942793
+0.111114 0.126879 0.141421 0.154602 0.166294 0.176384 0.184776 0.191388
+0.196157 0.199037 0.2 0.199037 0.196157 0.191388 0.184776 0.176384
+0.166294 0.154602 0.141422 0.126879 0.111114 0.0942797 0.0765371 0.0580574
+0.0390186 0.0196039 5.30718e-07 -0.0196029 -0.0390175 -0.0580564 -0.0765361
+-0.0942788 -0.111114 -0.126878 -0.141421 -0.154602 -0.166294 -0.176384
+-0.184776 -0.191388 -0.196157 -0.199037 -0.2 -0.199037 -0.196157 -0.191388
+-0.184776 -0.176385 -0.166294 -0.154603 -0.141422 -0.126879 -0.111115
+-0.0942802 -0.0765376 -0.0580579 -0.0390191 -0.0196045 -1.06144e-06
+0.0196024;
+#X coords 0 1 66 -1 200 140 1;
+#X restore 349 239 graph;
+#X text 404 166 Fourier synthesis (resizes table);
+#X obj 619 533 until;
+#X obj 812 515 pack s f;
+#X obj 812 463 t b f;
+#X obj 620 572 f;
+#X obj 654 572 + 1;
+#X obj 621 642 s \$1-value;
+#X obj 812 437 r \$1-value;
+#X obj 812 544 route list;
+#X text 885 610 store the list;
+#X obj 879 592 textfile;
+#X msg 941 565 rewind;
+#X obj 812 489 symbol add2;
+#X obj 906 520 bng 15 250 50 0 empty empty THEN_Print_the_list 18 7
+0 8 -24198 -1 -1;
+#X msg 725 541 clear;
+#X obj 906 541 t b b;
+#X msg 670 540 0;
+#X obj 618 443 bng 15 250 50 0 empty empty Bang_me 18 7 0 8 -24198
+-1 -1;
+#X obj 619 494 t b f b;
+#X msg 778 368 add2 \$1;
+#X msg 867 331 send /smurf/fid/3/live -0.0196034 0 0.0196034 0.039018
+0.0580569 0.0765366 0.0942793 0.111114 0.126879 0.141421 0.154602 0.166294
+0.176384 0.184776 0.191388 0.196157 0.199037 0.2 0.199037 0.196157
+0.191388 0.184776 0.176384 0.166294 0.154602 0.141422 0.126879 0.111114
+0.0942797 0.0765371 0.0580574 0.0390186 0.0196039 5.30718e-07 -0.0196029
+-0.0390175 -0.0580564 -0.0765361 -0.0942788 -0.111114 -0.126878 -0.141421
+-0.154602 -0.166294 -0.176384 -0.184776 -0.191388 -0.196157 -0.199037
+-0.2 -0.199037 -0.196157 -0.191388 -0.184776 -0.176385 -0.166294 -0.154603
+-0.141422 -0.126879 -0.111115 -0.0942802 -0.0765376 -0.0580579 -0.0390191
+-0.0196045 -1.06144e-06 0.0196024;
+#X obj 273 97 inlet;
+#X obj 721 738 outlet;
+#X msg 739 302 set send /smurf/fid/3/live;
+#X obj 618 463 arraysize oscLiveData3;
+#X obj 620 600 tabread oscLiveData3;
+#X obj 397 110 inlet;
+#X obj 446 142 * 0.5;
+#X msg 400 190 \; oscLiveData3 sinesum 64 \$1;
+#X connect 2 0 5 0;
+#X connect 3 0 9 0;
+#X connect 4 0 13 0;
+#X connect 4 1 3 1;
+#X connect 5 0 6 0;
+#X connect 5 0 26 0;
+#X connect 6 0 5 1;
+#X connect 8 0 4 0;
+#X connect 9 0 11 0;
+#X connect 12 0 11 0;
+#X connect 13 0 3 0;
+#X connect 14 0 16 0;
+#X connect 15 0 11 0;
+#X connect 16 0 11 0;
+#X connect 16 1 12 0;
+#X connect 17 0 5 1;
+#X connect 18 0 25 0;
+#X connect 19 0 14 0;
+#X connect 19 0 21 0;
+#X connect 19 1 2 0;
+#X connect 19 2 15 0;
+#X connect 19 2 17 0;
+#X connect 19 2 24 0;
+#X connect 20 0 21 0;
+#X connect 21 0 23 0;
+#X connect 22 0 18 0;
+#X connect 24 0 21 0;
+#X connect 25 0 19 0;
+#X connect 26 0 7 0;
+#X connect 26 0 20 0;
+#X connect 27 0 28 0;
+#X connect 28 0 29 0;
+#X restore 699 335 pd liveDataMessageGenerator3;
+#N canvas 0 22 1095 721 liveDataMessageGenerator4 0;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array oscLiveData4 67 float 1;
+#A 0 -0.0295406 0 0.0295406 0.0587967 0.0874866 0.115334 0.142071 0.167439
+0.191195 0.213109 0.232972 0.25059 0.265795 0.278441 0.288405 0.295591
+0.299931 0.301382 0.299931 0.295591 0.288405 0.278441 0.265796 0.250591
+0.232972 0.21311 0.191195 0.16744 0.142071 0.115335 0.0874874 0.0587975
+0.0295414 7.99745e-07 -0.0295398 -0.0587959 -0.0874858 -0.115333 -0.14207
+-0.167438 -0.191194 -0.213109 -0.232971 -0.25059 -0.265795 -0.278441
+-0.288405 -0.295591 -0.299931 -0.301382 -0.299931 -0.295592 -0.288405
+-0.278441 -0.265796 -0.250591 -0.232973 -0.21311 -0.191196 -0.16744
+-0.142072 -0.115335 -0.0874881 -0.0587983 -0.0295422 -1.59949e-06 0.029539
+;
+#X coords 0 1 66 -1 200 140 1;
+#X restore 359 249 graph;
+#X text 414 176 Fourier synthesis (resizes table);
+#X obj 629 543 until;
+#X obj 822 525 pack s f;
+#X obj 822 473 t b f;
+#X obj 630 582 f;
+#X obj 664 582 + 1;
+#X obj 631 652 s \$1-value;
+#X obj 822 447 r \$1-value;
+#X obj 822 554 route list;
+#X text 895 620 store the list;
+#X obj 889 602 textfile;
+#X msg 951 575 rewind;
+#X obj 822 499 symbol add2;
+#X obj 916 530 bng 15 250 50 0 empty empty THEN_Print_the_list 18 7
+0 8 -24198 -1 -1;
+#X msg 735 551 clear;
+#X obj 916 551 t b b;
+#X msg 680 550 0;
+#X obj 628 453 bng 15 250 50 0 empty empty Bang_me 18 7 0 8 -24198
+-1 -1;
+#X obj 482 667 print OUT;
+#X obj 629 504 t b f b;
+#X msg 788 378 add2 \$1;
+#X msg 877 341 send /smurf/fid/4/live -0.0196034 0 0.0196034 0.039018
+0.0580569 0.0765366 0.0942793 0.111114 0.126879 0.141421 0.154602 0.166294
+0.176384 0.184776 0.191388 0.196157 0.199037 0.2 0.199037 0.196157
+0.191388 0.184776 0.176384 0.166294 0.154602 0.141422 0.126879 0.111114
+0.0942797 0.0765371 0.0580574 0.0390186 0.0196039 5.30718e-07 -0.0196029
+-0.0390175 -0.0580564 -0.0765361 -0.0942788 -0.111114 -0.126878 -0.141421
+-0.154602 -0.166294 -0.176384 -0.184776 -0.191388 -0.196157 -0.199037
+-0.2 -0.199037 -0.196157 -0.191388 -0.184776 -0.176385 -0.166294 -0.154603
+-0.141422 -0.126879 -0.111115 -0.0942802 -0.0765376 -0.0580579 -0.0390191
+-0.0196045 -1.06144e-06 0.0196024;
+#X obj 283 107 inlet;
+#X obj 731 748 outlet;
+#X msg 749 312 set send /smurf/fid/4/live;
+#X obj 628 473 arraysize oscLiveData4;
+#X obj 630 610 tabread oscLiveData4;
+#X obj 407 120 inlet;
+#X obj 456 152 * 0.5;
+#X msg 410 200 \; oscLiveData4 sinesum 64 \$1;
+#X connect 2 0 5 0;
+#X connect 3 0 9 0;
+#X connect 4 0 13 0;
+#X connect 4 1 3 1;
+#X connect 5 0 6 0;
+#X connect 5 0 27 0;
+#X connect 6 0 5 1;
+#X connect 8 0 4 0;
+#X connect 9 0 11 0;
+#X connect 9 0 19 0;
+#X connect 12 0 11 0;
+#X connect 13 0 3 0;
+#X connect 14 0 16 0;
+#X connect 15 0 11 0;
+#X connect 16 0 11 0;
+#X connect 16 1 12 0;
+#X connect 17 0 5 1;
+#X connect 18 0 26 0;
+#X connect 20 0 14 0;
+#X connect 20 0 22 0;
+#X connect 20 1 2 0;
+#X connect 20 2 15 0;
+#X connect 20 2 17 0;
+#X connect 20 2 25 0;
+#X connect 21 0 22 0;
+#X connect 22 0 24 0;
+#X connect 23 0 18 0;
+#X connect 25 0 22 0;
+#X connect 26 0 20 0;
+#X connect 27 0 7 0;
+#X connect 27 0 21 0;
+#X connect 28 0 29 0;
+#X connect 29 0 30 0;
+#X restore 871 404 pd liveDataMessageGenerator4;
+#N canvas 0 22 1273 768 liveDataMessageGenerator5 0;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array oscLiveData5 67 float 1;
+#A 0 -0.0295406 0 0.0295406 0.0587967 0.0874866 0.115334 0.142071 0.167439
+0.191195 0.213109 0.232972 0.25059 0.265795 0.278441 0.288405 0.295591
+0.299931 0.301382 0.299931 0.295591 0.288405 0.278441 0.265796 0.250591
+0.232972 0.21311 0.191195 0.16744 0.142071 0.115335 0.0874874 0.0587975
+0.0295414 7.99745e-07 -0.0295398 -0.0587959 -0.0874858 -0.115333 -0.14207
+-0.167438 -0.191194 -0.213109 -0.232971 -0.25059 -0.265795 -0.278441
+-0.288405 -0.295591 -0.299931 -0.301382 -0.299931 -0.295592 -0.288405
+-0.278441 -0.265796 -0.250591 -0.232973 -0.21311 -0.191196 -0.16744
+-0.142072 -0.115335 -0.0874881 -0.0587983 -0.0295422 -1.59949e-06 0.029539
+;
+#X coords 0 1 66 -1 200 140 1;
+#X restore 369 259 graph;
+#X text 424 186 Fourier synthesis (resizes table);
+#X obj 639 553 until;
+#X obj 832 535 pack s f;
+#X obj 832 483 t b f;
+#X obj 640 592 f;
+#X obj 674 592 + 1;
+#X obj 641 662 s \$1-value;
+#X obj 832 457 r \$1-value;
+#X obj 832 564 route list;
+#X text 905 630 store the list;
+#X obj 899 612 textfile;
+#X msg 961 585 rewind;
+#X obj 832 509 symbol add2;
+#X obj 926 540 bng 15 250 50 0 empty empty THEN_Print_the_list 18 7
+0 8 -24198 -1 -1;
+#X msg 745 561 clear;
+#X obj 926 561 t b b;
+#X msg 690 560 0;
+#X obj 638 463 bng 15 250 50 0 empty empty Bang_me 18 7 0 8 -24198
+-1 -1;
+#X obj 639 514 t b f b;
+#X msg 798 388 add2 \$1;
+#X msg 887 351 send /smurf/fid/5/live -0.0290681 0 0.0290681 0.0578563
+0.0860873 0.113489 0.139798 0.164761 0.188137 0.209701 0.229245 0.246582
+0.261544 0.273987 0.283792 0.290863 0.295134 0.296562 0.295134 0.290864
+0.283792 0.273988 0.261544 0.246582 0.229246 0.209701 0.188137 0.164761
+0.139799 0.11349 0.086088 0.0578571 0.0290689 7.86953e-07 -0.0290673
+-0.0578555 -0.0860865 -0.113488 -0.139797 -0.16476 -0.188136 -0.2097
+-0.229245 -0.246582 -0.261544 -0.273987 -0.283792 -0.290863 -0.295134
+-0.296562 -0.295134 -0.290864 -0.283792 -0.273988 -0.261545 -0.246583
+-0.229246 -0.209702 -0.188138 -0.164762 -0.1398 -0.113491 -0.0860888
+-0.0578578 -0.0290697 -1.57391e-06 0.0290665;
+#X obj 293 117 inlet;
+#X obj 741 758 outlet;
+#X msg 759 322 set send /smurf/fid/5/live;
+#X obj 638 483 arraysize oscLiveData5;
+#X obj 640 620 tabread oscLiveData5;
+#X msg 420 210 \; oscLiveData5 sinesum 64 \$1;
+#X obj 417 130 inlet;
+#X obj 466 162 * 0.5;
+#X connect 2 0 5 0;
+#X connect 3 0 9 0;
+#X connect 4 0 13 0;
+#X connect 4 1 3 1;
+#X connect 5 0 6 0;
+#X connect 5 0 26 0;
+#X connect 6 0 5 1;
+#X connect 8 0 4 0;
+#X connect 9 0 11 0;
+#X connect 12 0 11 0;
+#X connect 13 0 3 0;
+#X connect 14 0 16 0;
+#X connect 15 0 11 0;
+#X connect 16 0 11 0;
+#X connect 16 1 12 0;
+#X connect 17 0 5 1;
+#X connect 18 0 25 0;
+#X connect 19 0 14 0;
+#X connect 19 0 21 0;
+#X connect 19 1 2 0;
+#X connect 19 2 15 0;
+#X connect 19 2 17 0;
+#X connect 19 2 24 0;
+#X connect 20 0 21 0;
+#X connect 21 0 23 0;
+#X connect 22 0 18 0;
+#X connect 24 0 21 0;
+#X connect 25 0 19 0;
+#X connect 26 0 7 0;
+#X connect 26 0 20 0;
+#X connect 28 0 29 0;
+#X connect 29 0 27 0;
+#X restore 806 441 pd liveDataMessageGenerator5;
+#N canvas 83 29 1264 755 liveDataMessageGenerator6 0;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array oscLiveData6 67 float 1;
+#A 0 -0.0196034 0 0.0196034 0.039018 0.0580569 0.0765366 0.0942793
+0.111114 0.126879 0.141421 0.154602 0.166294 0.176384 0.184776 0.191388
+0.196157 0.199037 0.2 0.199037 0.196157 0.191388 0.184776 0.176384
+0.166294 0.154602 0.141422 0.126879 0.111114 0.0942797 0.0765371 0.0580574
+0.0390186 0.0196039 5.30718e-07 -0.0196029 -0.0390175 -0.0580564 -0.0765361
+-0.0942788 -0.111114 -0.126878 -0.141421 -0.154602 -0.166294 -0.176384
+-0.184776 -0.191388 -0.196157 -0.199037 -0.2 -0.199037 -0.196157 -0.191388
+-0.184776 -0.176385 -0.166294 -0.154603 -0.141422 -0.126879 -0.111115
+-0.0942802 -0.0765376 -0.0580579 -0.0390191 -0.0196045 -1.06144e-06
+0.0196024;
+#X coords 0 1 66 -1 200 140 1;
+#X restore 379 269 graph;
+#X text 434 196 Fourier synthesis (resizes table);
+#X obj 649 563 until;
+#X obj 842 545 pack s f;
+#X obj 842 493 t b f;
+#X obj 650 602 f;
+#X obj 684 602 + 1;
+#X obj 651 672 s \$1-value;
+#X obj 842 467 r \$1-value;
+#X obj 842 574 route list;
+#X text 915 640 store the list;
+#X obj 909 622 textfile;
+#X msg 971 595 rewind;
+#X obj 842 519 symbol add2;
+#X obj 936 550 bng 15 250 50 0 empty empty THEN_Print_the_list 18 7
+0 8 -24198 -1 -1;
+#X msg 755 571 clear;
+#X obj 936 571 t b b;
+#X msg 700 570 0;
+#X obj 648 473 bng 15 250 50 0 empty empty Bang_me 18 7 0 8 -24198
+-1 -1;
+#X obj 649 524 t b f b;
+#X msg 808 398 add2 \$1;
+#X msg 897 361 send /smurf/fid/6/live -0.0196034 0 0.0196034 0.039018
+0.0580569 0.0765366 0.0942793 0.111114 0.126879 0.141421 0.154602 0.166294
+0.176384 0.184776 0.191388 0.196157 0.199037 0.2 0.199037 0.196157
+0.191388 0.184776 0.176384 0.166294 0.154602 0.141422 0.126879 0.111114
+0.0942797 0.0765371 0.0580574 0.0390186 0.0196039 5.30718e-07 -0.0196029
+-0.0390175 -0.0580564 -0.0765361 -0.0942788 -0.111114 -0.126878 -0.141421
+-0.154602 -0.166294 -0.176384 -0.184776 -0.191388 -0.196157 -0.199037
+-0.2 -0.199037 -0.196157 -0.191388 -0.184776 -0.176385 -0.166294 -0.154603
+-0.141422 -0.126879 -0.111115 -0.0942802 -0.0765376 -0.0580579 -0.0390191
+-0.0196045 -1.06144e-06 0.0196024;
+#X obj 303 127 inlet;
+#X obj 751 768 outlet;
+#X obj 648 493 arraysize oscLiveData6;
+#X obj 650 630 tabread oscLiveData6;
+#X msg 769 332 set send /smurf/fid/6/live;
+#X obj 427 140 inlet;
+#X obj 476 172 * 0.5;
+#X msg 430 220 \; oscLiveData6 sinesum 64 \$1;
+#X connect 2 0 5 0;
+#X connect 3 0 9 0;
+#X connect 4 0 13 0;
+#X connect 4 1 3 1;
+#X connect 5 0 6 0;
+#X connect 5 0 25 0;
+#X connect 6 0 5 1;
+#X connect 8 0 4 0;
+#X connect 9 0 11 0;
+#X connect 12 0 11 0;
+#X connect 13 0 3 0;
+#X connect 14 0 16 0;
+#X connect 15 0 11 0;
+#X connect 16 0 11 0;
+#X connect 16 1 12 0;
+#X connect 17 0 5 1;
+#X connect 18 0 24 0;
+#X connect 19 0 14 0;
+#X connect 19 0 21 0;
+#X connect 19 1 2 0;
+#X connect 19 2 15 0;
+#X connect 19 2 17 0;
+#X connect 19 2 26 0;
+#X connect 20 0 21 0;
+#X connect 21 0 23 0;
+#X connect 22 0 18 0;
+#X connect 24 0 19 0;
+#X connect 25 0 7 0;
+#X connect 25 0 20 0;
+#X connect 26 0 21 0;
+#X connect 27 0 28 0;
+#X connect 28 0 29 0;
+#X restore 748 471 pd liveDataMessageGenerator6;
+#N canvas 0 22 1152 784 liveDataMessageGenerator7 0;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array oscLiveData7 67 float 1;
+#A 0 -0.0178862 0 0.0178862 0.0356002 0.0529713 0.0698323 0.0860208
+0.101381 0.115764 0.129033 0.141059 0.151727 0.160934 0.16859 0.174623
+0.178974 0.181602 0.182481 0.181602 0.178974 0.174623 0.16859 0.160934
+0.151727 0.14106 0.129034 0.115765 0.101381 0.0860212 0.0698327 0.0529718
+0.0356007 0.0178867 4.84229e-07 -0.0178857 -0.0355997 -0.0529709 -0.0698318
+-0.0860203 -0.10138 -0.115764 -0.129033 -0.141059 -0.151727 -0.160933
+-0.16859 -0.174623 -0.178974 -0.181602 -0.182481 -0.181602 -0.178975
+-0.174623 -0.168591 -0.160934 -0.151728 -0.14106 -0.129034 -0.115765
+-0.101382 -0.0860216 -0.0698332 -0.0529722 -0.0356011 -0.0178872 -9.68458e-07
+0.0178853;
+#X coords 0 1 66 -1 200 140 1;
+#X restore 389 279 graph;
+#X text 444 206 Fourier synthesis (resizes table);
+#X obj 659 573 until;
+#X obj 852 555 pack s f;
+#X obj 852 503 t b f;
+#X obj 660 612 f;
+#X obj 694 612 + 1;
+#X obj 661 682 s \$1-value;
+#X obj 852 477 r \$1-value;
+#X obj 852 584 route list;
+#X text 925 650 store the list;
+#X obj 919 632 textfile;
+#X msg 981 605 rewind;
+#X obj 852 529 symbol add2;
+#X obj 946 560 bng 15 250 50 0 empty empty THEN_Print_the_list 18 7
+0 8 -24198 -1 -1;
+#X msg 765 581 clear;
+#X obj 946 581 t b b;
+#X msg 710 580 0;
+#X obj 658 483 bng 15 250 50 0 empty empty Bang_me 18 7 0 8 -24198
+-1 -1;
+#X obj 659 534 t b f b;
+#X msg 818 408 add2 \$1;
+#X msg 907 371 send /smurf/fid/7/live -0.0178862 0 0.0178862 0.0356002
+0.0529713 0.0698323 0.0860208 0.101381 0.115764 0.129033 0.141059 0.151727
+0.160934 0.16859 0.174623 0.178974 0.181602 0.182481 0.181602 0.178974
+0.174623 0.16859 0.160934 0.151727 0.14106 0.129034 0.115765 0.101381
+0.0860212 0.0698327 0.0529718 0.0356007 0.0178867 4.84229e-07 -0.0178857
+-0.0355997 -0.0529709 -0.0698318 -0.0860203 -0.10138 -0.115764 -0.129033
+-0.141059 -0.151727 -0.160933 -0.16859 -0.174623 -0.178974 -0.181602
+-0.182481 -0.181602 -0.178975 -0.174623 -0.168591 -0.160934 -0.151728
+-0.14106 -0.129034 -0.115765 -0.101382 -0.0860216 -0.0698332 -0.0529722
+-0.0356011 -0.0178872 -9.68458e-07 0.0178853;
+#X obj 313 137 inlet;
+#X obj 761 778 outlet;
+#X msg 779 342 set send /smurf/fid/7/live;
+#X obj 658 503 arraysize oscLiveData7;
+#X obj 660 640 tabread oscLiveData7;
+#X obj 437 150 inlet;
+#X obj 486 182 * 0.5;
+#X msg 440 230 \; oscLiveData7 sinesum 64 \$1;
+#X connect 2 0 5 0;
+#X connect 3 0 9 0;
+#X connect 4 0 13 0;
+#X connect 4 1 3 1;
+#X connect 5 0 6 0;
+#X connect 5 0 26 0;
+#X connect 6 0 5 1;
+#X connect 8 0 4 0;
+#X connect 9 0 11 0;
+#X connect 12 0 11 0;
+#X connect 13 0 3 0;
+#X connect 14 0 16 0;
+#X connect 15 0 11 0;
+#X connect 16 0 11 0;
+#X connect 16 1 12 0;
+#X connect 17 0 5 1;
+#X connect 18 0 25 0;
+#X connect 19 0 14 0;
+#X connect 19 0 21 0;
+#X connect 19 1 2 0;
+#X connect 19 2 15 0;
+#X connect 19 2 17 0;
+#X connect 19 2 24 0;
+#X connect 20 0 21 0;
+#X connect 21 0 23 0;
+#X connect 22 0 18 0;
+#X connect 24 0 21 0;
+#X connect 25 0 19 0;
+#X connect 26 0 7 0;
+#X connect 26 0 20 0;
+#X connect 27 0 28 0;
+#X connect 28 0 29 0;
+#X restore 683 503 pd liveDataMessageGenerator7;
+#X obj 779 21 loadbang;
+#X obj 36 286 loadbang;
+#X obj -86 452 loadbang;
+#X msg -88 487 4;
+#X msg -73 507 23;
+#X obj 34 457 loadbang;
+#X obj -117 622 loadbang;
+#X msg -80 676 4;
+#X obj -6 622 loadbang;
+#X msg 14 659 16;
+#X obj 123 622 loadbang;
+#X msg 143 659 16;
+#X msg 160 676 4;
+#X obj 239 620 loadbang;
+#X msg -49 506 32;
+#X msg -119 657 12;
+#X msg -97 659 32;
+#X msg -8 657 11;
+#X msg 31 676 12;
+#X msg 121 657 12;
+#X msg 237 655 8;
+#X msg 259 657 8;
+#X msg 276 674 34;
+#X msg -71 339 67;
+#X msg 54 494 344;
+#X msg 71 511 123;
+#X msg 32 492 32;
+#X msg 47 512 344;
+#X msg -64 321 344;
+#X msg -66 489 344;
+#X msg -104 677 344;
+#X msg 7 677 233;
+#X msg 136 677 333;
+#X msg 252 675 123;
+#X msg -47 338 434;
+#X msg -86 319 233;
+#X msg 31 323 2;
+#X msg 53 325 300;
+#X msg 46 343 800;
+#X msg 70 342 100;
+#X obj 381 920 sendOSC;
+#X msg 381 690 connect 127.0.0.1 7110;
+#X floatatom 484 798 5 0 0 0 - - -;
+#X obj 426 853 list;
+#X floatatom 426 796 5 0 0 0 - - -;
+#X obj 424 742 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X floatatom 1052 797 6 0 0 0 - - -;
+#X obj 1003 857 list;
+#X floatatom 1001 795 5 0 0 0 - - -;
+#X floatatom 780 853 5 0.001 0.999 0 - - -;
+#X msg 426 881 send /joint oscjoint \$1 \$2;
+#X obj 423 715 loadbang;
+#X obj 426 830 * 0.999;
+#X obj 484 827 * 0.999;
+#X obj 1002 828 * 0.999;
+#X obj 1053 828 * 0.999;
+#X text 571 686 Animata needs float values in the OSC messages \, so
+make sure you always have float numbers by holding shift when you modify
+the /layeralpha number box.;
+#X floatatom 597 854 5 0.001 0.999 0 - - -;
+#X msg 597 880 send /anibone animate \$1;
+#X msg 779 884 send /layeralpha background \$1;
+#X msg 1003 883 send /layerpos foreground \$1 \$2;
+#X obj 425 764 metro 20;
+#X msg 1216 885 send /layervis background \$1;
+#X obj 1214 775 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+1 1;
+#X text 1185 723 The /layervis message works only with the latest svn
+version (> r35);
+#X obj 533 781 * 100;
+#X obj 593 797 * 1;
+#X msg 390 729 disconnect;
+#X obj 6 419 AttDecSusRel;
+#X obj -25 748 AttDecSusRel;
+#X obj 212 750 AttDecSusRel;
+#X obj -96 417 AttDecSusRel;
+#X obj -118 586 AttDecSusRel;
+#X obj -144 746 AttDecSusRel;
+#X obj 93 748 AttDecSusRel;
+#X connect 0 0 6 0;
+#X connect 1 0 90 0;
+#X connect 1 1 91 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 3 1 5 0;
+#X connect 3 2 7 0;
+#X connect 6 0 88 0;
+#X connect 7 0 131 1;
+#X connect 7 0 206 1;
+#X connect 8 0 14 0;
+#X connect 8 2 3 0;
+#X connect 9 0 10 0;
+#X connect 9 1 11 0;
+#X connect 9 2 12 0;
+#X connect 12 0 112 1;
+#X connect 12 0 204 0;
+#X connect 12 0 130 1;
+#X connect 13 0 15 0;
+#X connect 13 2 9 0;
+#X connect 14 0 131 0;
+#X connect 14 0 7 0;
+#X connect 14 0 206 0;
+#X connect 15 0 112 0;
+#X connect 15 0 130 0;
+#X connect 15 0 12 0;
+#X connect 16 0 17 0;
+#X connect 16 1 18 0;
+#X connect 16 2 19 0;
+#X connect 19 0 207 1;
+#X connect 19 0 132 1;
+#X connect 20 0 26 0;
+#X connect 20 2 16 0;
+#X connect 21 0 22 0;
+#X connect 21 1 23 0;
+#X connect 21 2 24 0;
+#X connect 24 0 208 1;
+#X connect 24 0 133 1;
+#X connect 25 0 27 0;
+#X connect 25 2 21 0;
+#X connect 26 0 132 0;
+#X connect 26 0 19 0;
+#X connect 26 0 207 0;
+#X connect 27 0 133 0;
+#X connect 27 0 24 0;
+#X connect 27 0 208 0;
+#X connect 28 0 29 0;
+#X connect 28 1 30 0;
+#X connect 28 2 31 0;
+#X connect 31 0 209 1;
+#X connect 32 0 38 0;
+#X connect 32 2 28 0;
+#X connect 33 0 34 0;
+#X connect 33 1 35 0;
+#X connect 33 2 36 0;
+#X connect 36 0 203 0;
+#X connect 36 0 210 1;
+#X connect 36 0 135 1;
+#X connect 36 0 134 1;
+#X connect 37 0 39 0;
+#X connect 37 2 33 0;
+#X connect 38 0 134 0;
+#X connect 38 0 31 0;
+#X connect 38 0 209 0;
+#X connect 39 0 36 0;
+#X connect 39 0 210 0;
+#X connect 39 0 135 0;
+#X connect 40 0 41 0;
+#X connect 40 1 42 0;
+#X connect 40 2 43 0;
+#X connect 43 0 211 1;
+#X connect 43 0 136 1;
+#X connect 44 0 50 0;
+#X connect 44 2 40 0;
+#X connect 45 0 46 0;
+#X connect 45 1 47 0;
+#X connect 45 2 48 0;
+#X connect 48 0 212 1;
+#X connect 48 0 137 1;
+#X connect 49 0 51 0;
+#X connect 49 2 45 0;
+#X connect 50 0 136 0;
+#X connect 50 0 43 0;
+#X connect 50 0 211 0;
+#X connect 51 0 137 0;
+#X connect 51 0 48 0;
+#X connect 51 0 212 0;
+#X connect 52 0 53 0;
+#X connect 52 1 54 0;
+#X connect 52 2 55 0;
+#X connect 56 0 62 0;
+#X connect 56 2 52 0;
+#X connect 57 0 58 0;
+#X connect 57 1 59 0;
+#X connect 57 2 60 0;
+#X connect 61 0 63 0;
+#X connect 61 2 57 0;
+#X connect 62 0 55 0;
+#X connect 63 0 60 0;
+#X connect 64 0 65 0;
+#X connect 64 1 66 0;
+#X connect 64 2 67 0;
+#X connect 68 0 74 0;
+#X connect 68 2 64 0;
+#X connect 69 0 70 0;
+#X connect 69 1 71 0;
+#X connect 69 2 72 0;
+#X connect 73 0 75 0;
+#X connect 73 2 69 0;
+#X connect 74 0 67 0;
+#X connect 75 0 72 0;
+#X connect 76 0 77 0;
+#X connect 76 1 78 0;
+#X connect 76 2 79 0;
+#X connect 80 0 86 0;
+#X connect 80 2 76 0;
+#X connect 81 0 82 0;
+#X connect 81 1 83 0;
+#X connect 81 2 84 0;
+#X connect 85 0 87 0;
+#X connect 85 2 81 0;
+#X connect 86 0 79 0;
+#X connect 87 0 84 0;
+#X connect 88 0 8 0;
+#X connect 88 1 13 0;
+#X connect 88 2 20 0;
+#X connect 88 3 25 0;
+#X connect 88 4 32 0;
+#X connect 88 5 37 0;
+#X connect 88 6 44 0;
+#X connect 88 7 49 0;
+#X connect 88 8 56 0;
+#X connect 88 9 61 0;
+#X connect 88 10 68 0;
+#X connect 88 11 73 0;
+#X connect 88 12 80 0;
+#X connect 88 13 85 0;
+#X connect 93 0 1 0;
+#X connect 94 0 92 0;
+#X connect 95 0 0 0;
+#X connect 96 0 206 2;
+#X connect 97 0 206 3;
+#X connect 98 0 206 4;
+#X connect 99 0 206 5;
+#X connect 100 0 112 2;
+#X connect 101 0 112 3;
+#X connect 102 0 112 4;
+#X connect 103 0 112 5;
+#X connect 104 0 207 2;
+#X connect 105 0 207 3;
+#X connect 106 0 207 4;
+#X connect 107 0 207 5;
+#X connect 108 0 208 2;
+#X connect 109 0 208 3;
+#X connect 110 0 208 4;
+#X connect 111 0 208 5;
+#X connect 113 0 209 2;
+#X connect 114 0 209 3;
+#X connect 115 0 209 4;
+#X connect 116 0 209 5;
+#X connect 117 0 210 2;
+#X connect 118 0 210 3;
+#X connect 119 0 210 4;
+#X connect 120 0 210 5;
+#X connect 121 0 211 2;
+#X connect 122 0 211 3;
+#X connect 123 0 211 4;
+#X connect 124 0 211 5;
+#X connect 125 0 212 2;
+#X connect 126 0 212 3;
+#X connect 127 0 212 4;
+#X connect 128 0 212 5;
+#X connect 129 0 173 0;
+#X connect 129 0 166 0;
+#X connect 129 0 161 0;
+#X connect 129 0 172 0;
+#X connect 130 0 1 0;
+#X connect 131 0 1 0;
+#X connect 132 0 1 0;
+#X connect 133 0 1 0;
+#X connect 134 0 1 0;
+#X connect 135 0 1 0;
+#X connect 136 0 1 0;
+#X connect 137 0 1 0;
+#X connect 138 0 93 0;
+#X connect 139 0 174 0;
+#X connect 139 0 175 0;
+#X connect 139 0 176 0;
+#X connect 139 0 177 0;
+#X connect 140 0 141 0;
+#X connect 140 0 167 0;
+#X connect 140 0 142 0;
+#X connect 140 0 152 0;
+#X connect 141 0 117 0;
+#X connect 142 0 118 0;
+#X connect 143 0 164 0;
+#X connect 143 0 162 0;
+#X connect 143 0 165 0;
+#X connect 143 0 163 0;
+#X connect 144 0 153 0;
+#X connect 144 0 154 0;
+#X connect 144 0 168 0;
+#X connect 144 0 145 0;
+#X connect 145 0 124 0;
+#X connect 146 0 155 0;
+#X connect 146 0 147 0;
+#X connect 146 0 169 0;
+#X connect 146 0 156 0;
+#X connect 147 0 106 0;
+#X connect 148 0 157 0;
+#X connect 148 0 149 0;
+#X connect 148 0 170 0;
+#X connect 148 0 150 0;
+#X connect 149 0 127 0;
+#X connect 150 0 128 0;
+#X connect 151 0 158 0;
+#X connect 151 0 159 0;
+#X connect 151 0 171 0;
+#X connect 151 0 160 0;
+#X connect 152 0 120 0;
+#X connect 153 0 121 0;
+#X connect 154 0 123 0;
+#X connect 155 0 104 0;
+#X connect 156 0 107 0;
+#X connect 157 0 125 0;
+#X connect 158 0 108 0;
+#X connect 159 0 110 0;
+#X connect 160 0 111 0;
+#X connect 161 0 114 0;
+#X connect 162 0 102 0;
+#X connect 163 0 103 0;
+#X connect 164 0 100 0;
+#X connect 165 0 101 0;
+#X connect 166 0 115 0;
+#X connect 167 0 119 0;
+#X connect 168 0 122 0;
+#X connect 169 0 105 0;
+#X connect 170 0 126 0;
+#X connect 171 0 109 0;
+#X connect 172 0 116 0;
+#X connect 173 0 113 0;
+#X connect 174 0 96 0;
+#X connect 175 0 98 0;
+#X connect 176 0 97 0;
+#X connect 177 0 99 0;
+#X connect 179 0 178 0;
+#X connect 180 0 191 0;
+#X connect 181 0 188 0;
+#X connect 182 0 190 0;
+#X connect 183 0 199 0;
+#X connect 184 0 193 0;
+#X connect 185 0 198 0;
+#X connect 186 0 192 0;
+#X connect 187 0 197 0;
+#X connect 188 0 178 0;
+#X connect 189 0 183 0;
+#X connect 189 0 201 0;
+#X connect 190 0 181 0;
+#X connect 191 0 181 1;
+#X connect 192 0 185 0;
+#X connect 193 0 185 1;
+#X connect 195 0 196 0;
+#X connect 196 0 178 0;
+#X connect 197 0 178 0;
+#X connect 198 0 178 0;
+#X connect 199 0 182 0;
+#X connect 199 0 186 0;
+#X connect 200 0 178 0;
+#X connect 201 0 200 0;
+#X connect 203 0 180 0;
+#X connect 203 0 182 0;
+#X connect 204 0 195 0;
+#X connect 205 0 178 0;

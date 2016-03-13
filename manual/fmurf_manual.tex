@@ -1,0 +1,135 @@
+\documentclass[10pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage[frenchb]{babel}
+\author{Lucas Bigeardel}
+
+\usepackage{listings}
+
+\usepackage{pstricks}
+\usepackage{pst-node}
+
+\usepackage{multido}
+
+
+% Definition of new colors
+\definecolor{LightBlue}{rgb}{0.68,0.85,0.9}
+\definecolor{PaleGreen}{rgb}{0.88,1,0.88}
+
+\newcommand{\BackgroundColor}{PaleGreen}
+
+\newcommand{\Process}{%
+          
+\begin{psmatrix}[rowsep=1cm,mnode=circle,fillstyle=solid,fillcolor=yellow]
+            [name=P0] OSC:4445 &
+            [name=P1] OSC:4444 &                          
+            [name=P3] [FMURF] &        
+			[name=P2] TUIO:3333                       
+\end{psmatrix}
+
+\psset{arrows=->,arcangle=30,arrowsize=4pt 2,labelsep=2pt}}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\chapter{Introduction}
+
+\section{Architecture}
+
+\begin{figure}[!h]
+  \centering
+  \Process
+      \ncarc{P3}{P0}
+      \ncarc{P1}{P3}
+      \ncarc{P2}{P3}
+  \caption{Network}
+\end{figure}
+
+\title{FMURF Manual}
+
+
+\paragraph{FMURF architecture consists in a simple application having several OSC connections in input and output. Basically it receives OSC/TUIO message on 3333 default port and emits/receive custom [/smurf/*] messages on default ports 4444 and 4445.}
+
+\paragraph{A very convenient solution bootstraping TUIO incoming messages would be to grab TuioSimulator from TUIO.org. For more advanced prototypes it will be cool get some closest look at Reactivision and/or CCV.}
+
+\section{Communications}
+
+\subsection{TUIO}
+
+\paragraph{FMURF only uses a subset of TUIO 2D capabilities regarding fiducials (FIDs) and cursors. When connected to 3333 port, any TUIO enabled server can trigger fiducials and cursors UI event into the FMURF GUI.}
+
+\subsection{OSC IN}
+
+\paragraph{OSC messages are getting in on port 4444. Typically input messages are like : [/smurf/fid/\textit{uid}/live, ff]. /smurf/live messages come with index and value format that allow to set some live data to display along with given \textit{uid} fiducial. It is basically used to display simple frequencies on connections going from given \textit{uid} fiducials in the GUI.}
+
+\subsection{OSC OUT}
+
+\paragraph{OSC messages going out on default 4445 port consists in patterns like : [/smurf/fid/*] and [/smurf/cursor/*] . Indeed CRUD lifecycle is deduced from TUIO messages for both fiducials and cursors.}
+
+\subsection{Fiducials}
+
+\paragraph{Fiducials have four differents messages : ADD, REMOVE, UPDATE and BANG}
+
+\begin{list}{OSC:}{}
+\item /smurf/fid/\textit{uid}/add, fff
+\item /smurf/fid/\textit{uid}/update, fff
+\item /smurf/fid/\textit{uid}/remove, fff
+\item /smurf/fid/\textit{uid}/bang
+\end{list}
+
+\paragraph{The three OSC float parameters respectively define X, Y and Angle values of the given \textit{uid} fiducial. }
+
+
+\subsection{Cursors}
+
+\paragraph{Cursors have three differents messages : ADD, REMOVE and UPDATE}
+
+\begin{list}{OSC:}{}
+\item /smurf/cursor/\textit{uid}/add, ff
+\item /smurf/cursor/\textit{uid}/update, ff
+\item /smurf/cursor/\textit{uid}/remove, ff
+\end{list}
+
+\paragraph{The two OSC float parameters respectively define X, Y values of the given \textit{uid} cursor. }
+
+\section{Configuration}
+\paragraph{Configuration is done thanks to an XML file. This configuration file is hosted at the root in the data directory. It allows users to define OSC parameters, TUIO incoming port and various fiducial characteristics such as labels, styles, colors.}
+
+\begin{lstlisting}
+<smurf>
+  <settings>
+    <OscSendAddress>localhost</OscSendAddress>
+    <OscSendPort>4444</OscSendPort>
+    <OscReceivePort>4445</OscReceivePort>
+    <TuioPort>3333</TuioPort>
+  </settings>
+  <fid>
+    <id>0</id>
+    <style>DISC</style>
+    <BG>Green</BG>
+    <FG>Green</FG>
+    <radius>30.0</radius>
+  </fid>
+  <fid>
+	  <id>1</id>
+	  <style>SQUARE</style>
+	  <BG>Gold</BG>
+	  <FG>Gold</FG>
+	  <radius>30.0</radius>
+   </fid>
+</smurf>
+\end{lstlisting}
+
+\section{Credits}
+\paragraph{FMURF heavily relies on openframeworks.cc C++ library. It uses TUIO and OSC protocols to connect to other 3rd party applications such as Puredata, Max/MSP, Csound, etc ...}
+
+\section{Appendix A}
+
+
+\end{document}
+
